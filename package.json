@@ -1,0 +1,22 @@
+{
+  "name": "codotype-generator-starter-kit",
+  "version": "0.1.0",
+  "description": "A starter kit for new Codotype generators",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codotype/codotype-generator-starter-kit.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codotype/codotype-vuejs-vuex-generator/issues"
+  },
+  "homepage": "https://github.com/codotype/codotype-generator-starter-kit#readme",
+  "dependencies": {
+    "blazeplate_generator": "git+https://github.com/codotype/codotype-generator.git"
+  }
+}
