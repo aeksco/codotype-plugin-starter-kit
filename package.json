@@ -1,7 +1,7 @@
 {
   "name": "codotype-generator-starter-kit",
   "version": "0.1.0",
-  "description": "A starter kit for new Codotype generators",
+  "description": "A codotype generator for Vue.js, Vue Router, Vuex, &amp; Bootstrap",
   "main": "index.js",
   "scripts": {
     "test": "node index.js"
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/codotype/codotype-generator-starter-kit#readme",
   "dependencies": {
-    "blazeplate_generator": "git+https://github.com/codotype/codotype-generator.git"
+    "codotype-generator": "git+https://github.com/codotype/codotype-generator.git"
   }
 }
