@@ -1,7 +1,7 @@
-const { Generator } = require('codotype-generator')
+const Generator = require('@codotype/generator')
 
 module.exports = class MyNewGenerator extends Generator {
-  async write () {
+  async write() {
     await this.composeWith('./base')
   }
 }

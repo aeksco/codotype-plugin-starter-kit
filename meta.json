@@ -1,0 +1,16 @@
+{
+  "id": "codotype-generator-starter-kit",
+  "label": "Generator Starter Kit",
+  "icon": "devicon-python-plain",
+  "description": "A starter kit for building Codotype generators",
+  "tech_tags": ["Codotype", "Generator"],
+  "type_tags": ["Generator"],
+  "self_configuring": false,
+  "project_path": "generator_starter_kit",
+  "addons": [],
+  "global_options": [],
+  "model_options": [],
+  "github_url": "codotype/codotype-generator-starter-kit",
+  "version": "0.1.0",
+  "official": true
+}

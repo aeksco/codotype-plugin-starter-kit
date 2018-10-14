@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/codotype/codotype-generator-starter-kit#readme",
   "dependencies": {
-    "codotype-generator": "git+https://github.com/codotype/codotype-generator.git"
+    "@codotype/generator": "^0.2.0"
+  },
+  "devDependencies": {
+    "@codotype/blueprints": "^0.2.0",
+    "@codotype/util": "^0.3.0",
+    "@codotype/runtime": "^0.4.0"
   }
 }

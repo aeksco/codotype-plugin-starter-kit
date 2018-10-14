@@ -1,4 +1,4 @@
-const { Generator } = require('codotype-generator')
+const Generator = require('@codotype/generator')
 
 module.exports = class GeneratorBase extends Generator {
   async write () {
