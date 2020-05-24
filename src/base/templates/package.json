@@ -1,7 +1,6 @@
 {
-  "name": "codotype-generator-starter-kit",
-  "version": "0.8.0",
-  "description": "A Codotype Generator that generates Codotype Generators",
+  "name": "<%= project.identifiers.snake %>",
+  "version": "1.0.0",
   "scripts": {
     "build": "npm run clean && npm run copyTemplates && npm run compile",
     "dev": "tsc -w -p tsconfig.json",
@@ -11,16 +10,7 @@
     "prepublishOnly": "npm run build",
     "serve": "codotype generator-serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codotype/codotype-generator-starter-kit.git"
-  },
-  "author": "Alexander Schwartzberg",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codotype/codotype-generator-starter-kit/issues"
-  },
-  "homepage": "https://github.com/codotype/codotype-generator-starter-kit#readme",
   "dependencies": {
     "@codotype/generator": "0.8.0-canary.3",
     "@codotype/types": "0.8.0-canary.4"

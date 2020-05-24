@@ -1,0 +1,8 @@
+# <%= project.identifiers.label %> Configuration
+
+The following values were taken from the "basic" ConfigurationGroup defined in meta.ts.
+
+String value: "<%= basic.string %>"
+Number value: "<%= String(basic.number) %>"
+Boolean value: "<%= String(basic.boolean) %>"
+Dropdown value: "<%= basic.dropdown %>"

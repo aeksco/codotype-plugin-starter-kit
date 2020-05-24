@@ -22,7 +22,7 @@ build/**/*
 *.sln
 
 # Ignore generator directory
-generator/**/*
+./generator
 
 # Ignore .codotype-out directory
-.codotype-out
+./.codotype-out
