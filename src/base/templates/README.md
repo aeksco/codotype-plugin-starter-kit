@@ -6,17 +6,17 @@ A starter Codotype Generator.
 
 This is a Codotype Generator starter kit that has yet to be modified.
 
-### Install and Deploy
-
-1. Install dependencies with NPM:
-
-```
-yarn install
-```
-
 ### Development
 
-A [Postman](https://www.getpostman.com/) collection and environments (`dev` and `production`) are included in this repository to support API development - they are located in the `.postman` directory. Read the Postman [documentation](https://www.getpostman.com/docs/postman/collections/data_formats) about importing collections and environments.
+1. Run `yarn install` to install dependencies
+
+2. Run `yarn build` to build the `<%= project.identifiers.label %>` generator
+
+3. Run `yarn serve` to serve the generator locally using [@codotype/cli](https://www.npmjs.com/package/@codotype/cli)
+
+4. Use the web app (should be served at `localhost:3030`) to change default parameters and generate your code.
+
+5. Your generated code should be in the `.codotype-out` directory.
 
 ### Technologies used
 
@@ -25,4 +25,5 @@ A [Postman](https://www.getpostman.com/) collection and environments (`dev` and 
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT).
+
 Built with [Codotype.io](https://www.codotype.io/).
