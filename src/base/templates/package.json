@@ -1,22 +1,22 @@
 {
-  "name": "<%= project.identifiers.snake %>",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "npm run clean && npm run copyTemplates && npm run compile",
-    "dev": "tsc -w -p tsconfig.json",
-    "clean": "rm -rf ./generator",
-    "compile": "tsc -p tsconfig.json",
-    "copyTemplates": "mkdir generator && cp -R ./src/* ./generator",
-    "prepublishOnly": "npm run build",
-    "serve": "codotype generator-serve"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@codotype/generator": "0.8.0-canary.3",
-    "@codotype/types": "0.8.0-canary.4"
-  },
-  "devDependencies": {
-    "@codotype/cli": "0.8.0-canary.11",
-    "typescript": "^3.8.3"
-  }
+    "name": "<%= project.identifiers.snake %>",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run clean && npm run copyTemplates && npm run compile",
+        "dev": "tsc -w -p tsconfig.json",
+        "clean": "rm -rf ./dist",
+        "compile": "tsc -p tsconfig.json",
+        "copyTemplates": "mkdir dist && cp -R ./src/* ./dist",
+        "prepublishOnly": "npm run build",
+        "test": "codotype plugin-test",
+        "serve": "codotype plugin-serve"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@codotype/core": "0.8.0-canary.9"
+    },
+    "devDependencies": {
+        "@codotype/cli": "0.8.0-canary.20",
+        "typescript": "^3.8.3"
+    }
 }

@@ -21,8 +21,5 @@ build/**/*
 *.njsproj
 *.sln
 
-# Ignore generator directory
-generator/**/*
-
 # Ignore .codotype-out directory
 .codotype-out

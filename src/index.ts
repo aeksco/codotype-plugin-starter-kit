@@ -1,11 +1,11 @@
-import { ConstructorOptions } from "@codotype/generator";
+import { GeneratorProps } from "@codotype/core";
 
 // Defines typed generator constant
-const generator: ConstructorOptions = {
-  name: "Codotype Generator Starter",
-  async write() {
-    await this.composeWith("./base");
-  }
+const generator: GeneratorProps = {
+    name: "Codotype Plugin Starter",
+    async write({ runtime }) {
+        await runtime.composeWith("./base");
+    },
 };
 
 // exports generator constructor options

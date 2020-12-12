@@ -1,32 +1,36 @@
-import { ConstructorOptions } from "@codotype/generator";
+import { GeneratorProps } from "@codotype/core";
 
-const Generator: ConstructorOptions = {
-  name: "Codotype Generator Starter - Base",
-  async write({ project }) {
-    // Copies server base code
-    await this.copyDir({ src: "", dest: "" });
+const Generator: GeneratorProps = {
+    name: "Codotype Plugin Starter - Base",
+    async write({ runtime }) {
+        // Ensures /src directory is present
+        runtime.ensureDir("src");
+        runtime.ensureDir("src/base");
 
-    // Isolates UserSchema + build inlineDeconstruction
-    // const userSchema = project.schemas.find(
-    //   s => s.identifiers.singular.snake === "user"
-    // );
-    // const inlineDeconstruction = userSchema.attributes
-    //   .map(r => r.identifiers.snake)
-    //   .join(", ");
+        // Writes LICENSE
+        await runtime.renderTemplate({
+            src: "LICENSE",
+            dest: "LICENSE",
+        });
 
-    // Renders auth controller
-    // await this.renderComponent({
-    //   src: "src/api/auth/auth.controller.js",
-    //   dest: "src/api/auth/auth.controller.js",
-    //   data: { inlineDeconstruction }
-    // });
+        // Writes README.md
+        await runtime.renderTemplate({
+            src: "README.md",
+            dest: "README.md",
+        });
 
-    // Writes LICENSE + package.json
-    await this.renderComponent({ src: "LICENSE", dest: "LICENSE" });
-    await this.renderComponent({ src: "README.md", dest: "README.md" });
-    await this.renderComponent({ src: "package.json", dest: "package.json" });
-    await this.renderComponent({ src: "src/meta.ts", dest: "src/meta.ts" });
-  }
+        // Writes package.json
+        await runtime.renderTemplate({
+            src: "package.json",
+            dest: "package.json",
+        });
+
+        // Writes src/meta.ts
+        await runtime.renderTemplate({
+            src: "src/meta.ts",
+            dest: "src/meta.ts",
+        });
+    },
 };
 
 export = Generator;

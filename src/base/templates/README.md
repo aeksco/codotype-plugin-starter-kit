@@ -4,7 +4,7 @@ A starter Codotype Generator.
 
 ## Getting Started
 
-This is a Codotype Generator starter kit that has yet to be modified.
+This is a Codotype Plugin Starter kit that has yet to be modified.
 
 ### Development
 
@@ -20,7 +20,7 @@ This is a Codotype Generator starter kit that has yet to be modified.
 
 ### Technologies used
 
-- [Codotype](https://codotype.org/)
+-   [Codotype](https://codotype.org/)
 
 ## License
 

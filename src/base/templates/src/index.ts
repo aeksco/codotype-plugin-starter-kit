@@ -1,11 +1,11 @@
-import { ConstructorOptions } from "@codotype/generator";
+import { GeneratorProps } from "@codotype/core";
 
 // Defines typed generator constant
-const generator: ConstructorOptions = {
-  name: "<%= project.identifiers.label %>",
-  async write() {
-    await this.composeWith("./base");
-  }
+const generator: GeneratorProps = {
+    name: "<%= project.identifiers.label %>",
+    async write() {
+        await this.composeWith("./base");
+    },
 };
 
 // exports generator constructor options

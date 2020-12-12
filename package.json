@@ -1,32 +1,32 @@
 {
-  "name": "codotype-generator-starter-kit",
-  "version": "0.8.0",
-  "description": "A Codotype Generator that generates Codotype Generators",
-  "scripts": {
-    "build": "npm run clean && npm run copyTemplates && npm run compile",
-    "dev": "tsc -w -p tsconfig.json",
-    "clean": "rm -rf ./generator",
-    "compile": "tsc -p tsconfig.json",
-    "copyTemplates": "mkdir generator && cp -R ./src/* ./generator",
-    "prepublishOnly": "npm run build",
-    "serve": "codotype generator-serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codotype/codotype-generator-starter-kit.git"
-  },
-  "author": "Alexander Schwartzberg",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codotype/codotype-generator-starter-kit/issues"
-  },
-  "homepage": "https://github.com/codotype/codotype-generator-starter-kit#readme",
-  "dependencies": {
-    "@codotype/generator": "0.8.0-canary.3",
-    "@codotype/types": "0.8.0-canary.4"
-  },
-  "devDependencies": {
-    "@codotype/cli": "0.8.0-canary.11",
-    "typescript": "^3.8.3"
-  }
+    "name": "codotype-plugin-starter-kit",
+    "version": "0.8.0",
+    "description": "A Codotype Plugin that generates Codotype Plugins",
+    "scripts": {
+        "test": "codotype plugin-test",
+        "build": "npm run clean && npm run copyTemplates && npm run compile",
+        "dev": "tsc -w -p tsconfig.json",
+        "clean": "rm -rf ./dist",
+        "compile": "tsc -p tsconfig.json",
+        "copyTemplates": "mkdir dist && cp -R ./src/* ./dist",
+        "prepublishOnly": "npm run build",
+        "serve": "codotype plugin-serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codotype/codotype-plugin-starter-kit.git"
+    },
+    "author": "Alexander Schwartzberg",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/codotype/codotype-plugin-starter-kit/issues"
+    },
+    "homepage": "https://github.com/codotype/codotype-plugin-starter-kit#readme",
+    "dependencies": {
+        "@codotype/core": "0.8.0-canary.9"
+    },
+    "devDependencies": {
+        "@codotype/cli": "0.8.0-canary.20",
+        "typescript": "^3.8.3"
+    }
 }
