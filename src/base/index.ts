@@ -4,8 +4,14 @@ const Generator: GeneratorProps = {
     name: "Codotype Plugin Starter - Base",
     async write({ runtime }) {
         // Ensures /src directory is present
-        runtime.ensureDir("src");
-        runtime.ensureDir("src/base");
+        await runtime.ensureDir("src");
+        await runtime.ensureDir("src/base");
+
+        // Copies directory
+        await runtime.copyDir({
+            src: "",
+            dest: "",
+        });
 
         // Writes LICENSE
         await runtime.renderTemplate({

@@ -41,7 +41,7 @@ const BASE_CONFIGURATION_GROUP: ConfigurationGroup = new Primatives.Configuratio
         },
         enabled: true,
         allowDisable: false,
-        layoutVariant: GroupLayoutVariants.TABS,
+        layoutVariant: GroupLayoutVariants.LIST,
         sections: [],
         properties: [],
     },
