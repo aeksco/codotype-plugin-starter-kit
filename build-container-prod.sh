@@ -1,0 +1,1 @@
+docker run -it --pid=host -p 3000:3000 -v $(pwd):/usr/src/plugin codotype-plugin-prod
