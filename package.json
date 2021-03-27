@@ -4,12 +4,12 @@
     "description": "A Codotype Plugin that generates Codotype Plugins",
     "scripts": {
         "test": "codotype plugin-test",
-        "build": "npm run clean && npm run copyTemplates && npm run compile",
+        "build": "yarn run clean && yarn run copyTemplates && yarn run compile",
         "dev": "tsc -w -p tsconfig.json",
         "clean": "rm -rf ./dist",
-        "compile": "tsc -p tsconfig.json",
+        "compile": "tsc -p ./tsconfig.json",
         "copyTemplates": "mkdir dist && cp -R ./src/* ./dist",
-        "prepublishOnly": "npm run build",
+        "prepublishOnly": "yarn run build",
         "serve": "codotype plugin-serve"
     },
     "repository": {
