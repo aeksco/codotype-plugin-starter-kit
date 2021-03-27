@@ -7,7 +7,7 @@
         "build": "yarn run clean && yarn run copyTemplates && yarn run compile",
         "dev": "tsc -w -p tsconfig.json",
         "clean": "rm -rf ./dist",
-        "compile": "tsc -p ./tsconfig.json",
+        "compile": "tsc -p ./tsconfig.json --types node",
         "copyTemplates": "mkdir dist && cp -R ./src/* ./dist",
         "prepublishOnly": "yarn run build",
         "serve": "codotype plugin-serve"
@@ -27,6 +27,7 @@
     },
     "devDependencies": {
         "@codotype/cli": "0.8.0-canary.20",
+        "@types/node": "^14.14.37",
         "typescript": "^3.8.3"
     }
 }
