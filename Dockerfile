@@ -1,8 +1,8 @@
 FROM codotype/codotype-plugin-prod
 
-RUN mkdir -p /usr/src/plugin/dist
+RUN mkdir -p /usr/src/plugin
 
-COPY ./dist /usr/src/plugin/dist
+COPY ./ /usr/src/plugin
 
 # Start the Next.js app
 CMD [ "yarn", "start" ]
