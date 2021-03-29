@@ -36,6 +36,12 @@ const Generator: GeneratorProps = {
             src: "src/meta.ts",
             dest: "src/meta.ts",
         });
+
+        // Writes docker-compose.yml
+        await runtime.renderTemplate({
+            src: "docker-compose.yml",
+            dest: "docker-compose.yml",
+        });
     },
 };
 
