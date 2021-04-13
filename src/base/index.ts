@@ -6,6 +6,7 @@ const Generator: GeneratorProps = {
         // Ensures /src directory is present
         await runtime.ensureDir("src");
         await runtime.ensureDir("src/base");
+        await runtime.ensureDir("src/base/templates");
 
         // Copies directory
         await runtime.copyDir({
