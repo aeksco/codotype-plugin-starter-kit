@@ -14,6 +14,12 @@ const Generator: GeneratorProps = {
             dest: "",
         });
 
+        // Copies directory
+        await runtime.copyDir({
+            src: "src/base/templates",
+            dest: "src/base/templates",
+        });
+
         // Writes LICENSE
         await runtime.renderTemplate({
             src: "LICENSE",
