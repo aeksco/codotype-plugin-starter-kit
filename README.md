@@ -13,3 +13,7 @@
 4. Use the web app (should be served at `localhost:3030`) to change default parameters and generate your starter project.
 
 5. Your generated code should be in the `.codotype-out` directory.
+
+## Built with:
+
+-   [Codotype](https://github.com/codotype)
