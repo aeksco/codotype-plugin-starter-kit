@@ -1,6 +1,6 @@
-# <%= project.identifiers.label %> Codotype Generator
+# <%= project.identifiers.label %> Codotype Plugin
 
-A starter Codotype Generator.
+A starter Codotype Plugin.
 
 ## Getting Started
 
@@ -10,9 +10,9 @@ This is a Codotype Plugin Starter kit that has yet to be modified.
 
 1. Run `yarn install` to install dependencies
 
-2. Run `yarn build` to build the `<%= project.identifiers.label %>` generator
+2. Run `yarn build` to build the `<%= project.identifiers.label %>` plugin
 
-3. Run `yarn serve` to serve the generator locally using [@codotype/cli](https://www.npmjs.com/package/@codotype/cli)
+3. Run `yarn serve` to serve the plugin locally using [@codotype/cli](https://www.npmjs.com/package/@codotype/cli)
 
 4. Use the web app (should be served at `localhost:3030`) to change default parameters and generate your code.
 
