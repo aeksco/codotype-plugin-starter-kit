@@ -1,5 +1,5 @@
 # Extend codotype/codotype-plugin-prod
-FROM codotype/codotype-plugin-prod
+FROM codotype/codotype-plugin-prod:latest
 
 # Add /usr/src/plugin directory
 RUN mkdir -p /usr/src/plugin
