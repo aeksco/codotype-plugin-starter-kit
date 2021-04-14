@@ -1,115 +1,82 @@
 import {
-    PluginMetadata,
     ExperienceRecommendations,
     ConfigurationGroup,
     PropertyTypes,
-    ConfigurationProperty,
-    PropertyLayoutVariants,
     Primatives,
-    GroupLayoutVariants,
 } from "@codotype/core";
-
-// // // //
-
-const BASE_CONFIGURATION_GROUP_PROPERTY: ConfigurationProperty = new Primatives.ConfigurationProperty(
-    {
-        identifier: "BASE_PROPERTY",
-        content: {
-            icon: "",
-            label: "BASE_PROPERTY",
-            description: "",
-            documentation: "",
-        },
-        type: PropertyTypes.STRING,
-        layoutVariant: PropertyLayoutVariants.CARD_COL_12,
-        defaultValue: false,
-        required: false,
-        allowDisable: false,
-        properties: [],
-        dropdownOptions: [],
-        validations: [],
-    },
-);
-
-const BASE_CONFIGURATION_GROUP: ConfigurationGroup = new Primatives.ConfigurationGroup(
-    {
-        identifier: "base_configuration_group",
-        content: {
-            label: "BASE_CONFIGURATION_GROUP",
-            description: "BASE_CONFIGURATION_GROUP DESC.",
-            documentation: "",
-        },
-        enabled: true,
-        allowDisable: false,
-        layoutVariant: GroupLayoutVariants.LIST,
-        sections: [],
-        properties: [],
-    },
-);
 
 // // // //
 // GeneratorMeta Configuration Group
 
-const GeneratorNameProperty: ConfigurationProperty = {
-    ...BASE_CONFIGURATION_GROUP_PROPERTY,
-    identifier: "generatorName",
-    content: {
-        ...BASE_CONFIGURATION_GROUP.content,
-        label: "Generator Name",
-        description: "Name of the Generator",
-        documentation: "",
-    },
-    type: PropertyTypes.STRING,
-    defaultValue: "",
-};
+// const GeneratorNameProperty: ConfigurationProperty = {
+//     ...BASE_CONFIGURATION_GROUP_PROPERTY,
+//     identifier: "generatorName",
+//     content: {
+//         ...BASE_CONFIGURATION_GROUP.content,
+//         label: "Generator Name",
+//         description: "Name of the Generator",
+//         documentation: "",
+//     },
+//     type: PropertyTypes.STRING,
+//     defaultValue: "",
+// };
 
-const GeneratorIdentifierProperty: ConfigurationProperty = {
-    ...BASE_CONFIGURATION_GROUP_PROPERTY,
-    identifier: "generatorIdentifier",
-    content: {
-        ...BASE_CONFIGURATION_GROUP_PROPERTY.content,
-        label: "Generator Identifier",
-        description: "Identifier of the Generator",
-        documentation: "",
-    },
-    type: PropertyTypes.STRING,
-    defaultValue: "",
-};
+// const GeneratorIdentifierProperty: ConfigurationProperty = {
+//     ...BASE_CONFIGURATION_GROUP_PROPERTY,
+//     identifier: "generatorIdentifier",
+//     content: {
+//         ...BASE_CONFIGURATION_GROUP_PROPERTY.content,
+//         label: "Generator Identifier",
+//         description: "Identifier of the Generator",
+//         documentation: "",
+//     },
+//     type: PropertyTypes.STRING,
+//     defaultValue: "",
+// };
 
-const GeneratorDescriptionProperty: ConfigurationProperty = {
-    ...BASE_CONFIGURATION_GROUP_PROPERTY,
-    identifier: "generatorDescription",
-    content: {
-        ...BASE_CONFIGURATION_GROUP_PROPERTY.content,
-        label: "Generator Description",
-        description: "Description of the Generator",
-        documentation: "",
-    },
-    type: PropertyTypes.STRING,
-    defaultValue: "",
-};
+// const GeneratorDescriptionProperty: ConfigurationProperty = {
+//     ...BASE_CONFIGURATION_GROUP_PROPERTY,
+//     identifier: "generatorDescription",
+//     content: {
+//         ...BASE_CONFIGURATION_GROUP_PROPERTY.content,
+//         label: "Generator Description",
+//         description: "Description of the Generator",
+//         documentation: "",
+//     },
+//     type: PropertyTypes.STRING,
+//     defaultValue: "",
+// };
 
-const GeneratorMetaConfigurationGroup: ConfigurationGroup = {
-    ...BASE_CONFIGURATION_GROUP,
-    identifier: "generator_meta",
+export const EnableDataModelEditor = new Primatives.ConfigurationProperty({
+    identifier: "enableDataModelEditor",
     content: {
-        label: "Generator Meta",
-        description: "Metadata for the Codotype Generator",
+        label: "Data Model Editor",
+        description: "Enable the Data Model Editor in your Codotype Plugin",
+        icon: "https://ogp.me/logo.png",
         documentation: "",
-        icon: "",
     },
-    properties: [
-        GeneratorNameProperty,
-        GeneratorIdentifierProperty,
-        GeneratorDescriptionProperty,
-    ],
-};
+    type: PropertyTypes.BOOLEAN,
+});
+
+export const GeneratorMetaConfigurationGroup: ConfigurationGroup = new Primatives.ConfigurationGroup(
+    {
+        identifier: "pluginMeta",
+        content: {
+            label: "Plugin Meta",
+            description:
+                "Get started quickly by customizing the type of Codotype Plugin you would like to make",
+            documentation: "",
+            icon: "",
+        },
+        properties: [EnableDataModelEditor],
+    },
+);
 
 // // // //
-// // // //
 
-const CodotypeGeneratorStarterMeta: PluginMetadata = {
-    identifier: "codotype-plugin-starter",
+const CodotypeGeneratorStarterMeta = new Primatives.Plugin({
+    // identifier: "codotype-plugin-starter",
+    id: "codotype-plugin-starter", // TODO - rename this to identifier
     content: {
         label: "Codotype Plugin Starter",
         documentation: "",
@@ -146,7 +113,7 @@ const CodotypeGeneratorStarterMeta: PluginMetadata = {
         relationAddons: [],
     },
     configurationGroups: [GeneratorMetaConfigurationGroup],
-};
+});
 
 // // // //
 
