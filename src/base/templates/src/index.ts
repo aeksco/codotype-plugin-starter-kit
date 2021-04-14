@@ -2,7 +2,7 @@ import { GeneratorProps } from "@codotype/core";
 
 // Defines typed generator constant
 const generator: GeneratorProps = {
-    name: "<%= project.identifiers.label %>",
+    name: "<%= project.identifiers.title %>",
     async write() {
         await this.composeWith("./base");
     },

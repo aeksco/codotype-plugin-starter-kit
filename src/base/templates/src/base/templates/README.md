@@ -1,4 +1,4 @@
-# <%= project.identifiers.label %> Generated Code
+# <%= project.identifiers.title %> Generated Code
 
 This file is just copied to the output of your generator.
 

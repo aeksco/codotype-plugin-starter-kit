@@ -2,7 +2,7 @@ import { GeneratorProps } from "@codotype/core";
 import { BasicConfigurationGroup } from "../meta";
 
 const Generator: GeneratorProps = {
-    name: "<%= project.identifiers.label %> - Base",
+    name: "<%= project.identifiers.title %> - Base",
     async write({ runtime, project }) {
         // Copies contents of "./templates" directory into the root of the generated code's destination
         await runtime.copyDir({ src: "", dest: "" });

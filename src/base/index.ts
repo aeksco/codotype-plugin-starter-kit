@@ -20,6 +20,18 @@ const Generator: GeneratorProps = {
             dest: "src/base/templates",
         });
 
+        // Writes src/index.ts
+        await runtime.renderTemplate({
+            src: "src/index.ts",
+            dest: "src/index.ts",
+        });
+
+        // Writes src/base/index.ts
+        await runtime.renderTemplate({
+            src: "src/base/index.ts",
+            dest: "src/base/index.ts",
+        });
+
         // Writes LICENSE
         await runtime.renderTemplate({
             src: "LICENSE",
@@ -36,12 +48,6 @@ const Generator: GeneratorProps = {
         await runtime.renderTemplate({
             src: "package.json",
             dest: "package.json",
-        });
-
-        // Writes src/meta.ts
-        await runtime.renderTemplate({
-            src: "src/meta.ts",
-            dest: "src/meta.ts",
         });
 
         // Writes docker-compose.yml

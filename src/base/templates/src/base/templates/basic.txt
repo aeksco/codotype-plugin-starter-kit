@@ -1,4 +1,4 @@
-# <%= project.identifiers.label %> Configuration
+# <%= project.identifiers.title %> Configuration
 
 The following values were taken from the "basic" ConfigurationGroup defined in meta.ts.
 

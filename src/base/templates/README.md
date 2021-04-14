@@ -1,4 +1,4 @@
-# <%= project.identifiers.label %> Codotype Plugin
+# <%= project.identifiers.title %> Codotype Plugin
 
 A starter Codotype Plugin.
 
@@ -10,7 +10,7 @@ This is a Codotype Plugin Starter kit that has yet to be modified.
 
 1. Run `yarn install` to install dependencies
 
-2. Run `yarn build` to build the `<%= project.identifiers.label %>` plugin
+2. Run `yarn build` to build the `<%= project.identifiers.title %>` plugin
 
 3. Run `yarn serve` to serve the plugin locally using [@codotype/cli](https://www.npmjs.com/package/@codotype/cli)
 
