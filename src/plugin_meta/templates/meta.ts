@@ -4,7 +4,7 @@ import {
     ConfigurationGroup,
     PropertyTypes,
     ConfigurationProperty,
-    Primatives,
+    Primitives,
     SchemaEditorConfiguration,
     <%_ if (enableDataModelEditor) { _%>
     CreatedByValues,
@@ -134,7 +134,7 @@ const schemaEditorConfiguration: SchemaEditorConfiguration = {
 // // // //
 // Basic Configuration Group
 
-const StringProperty: ConfigurationProperty = new Primatives.ConfigurationProperty({
+const StringProperty: ConfigurationProperty = new Primitives.ConfigurationProperty({
     identifier: "string",
     content: {
         label: "String",
@@ -146,7 +146,7 @@ const StringProperty: ConfigurationProperty = new Primatives.ConfigurationProper
     defaultValue: "",
 })
 
-const NumberProperty: ConfigurationProperty = new Primatives.ConfigurationProperty({
+const NumberProperty: ConfigurationProperty = new Primitives.ConfigurationProperty({
     identifier: "number",
     content: {
         label: "Number",
@@ -158,7 +158,7 @@ const NumberProperty: ConfigurationProperty = new Primatives.ConfigurationProper
     defaultValue: "",
 })
 
-const BooleanProperty: ConfigurationProperty = new Primatives.ConfigurationProperty({
+const BooleanProperty: ConfigurationProperty = new Primitives.ConfigurationProperty({
     identifier: "boolean",
     content: {
         label: "Boolean",
@@ -170,7 +170,7 @@ const BooleanProperty: ConfigurationProperty = new Primatives.ConfigurationPrope
     defaultValue: false,
 })
 
-const DropdownProperty: ConfigurationProperty = new Primatives.ConfigurationProperty({
+const DropdownProperty: ConfigurationProperty = new Primitives.ConfigurationProperty({
     identifier: "dropdown",
     content: {
         label: "Dropdown",
@@ -187,7 +187,7 @@ const DropdownProperty: ConfigurationProperty = new Primatives.ConfigurationProp
     ],
 })
 
-export const BasicConfigurationGroup: ConfigurationGroup = new Primatives.ConfigurationGroup({
+export const BasicConfigurationGroup: ConfigurationGroup = new Primitives.ConfigurationGroup({
     identifier: "basic",
     content: {
         label: "Basic Configuration Group",
@@ -205,8 +205,8 @@ export const BasicConfigurationGroup: ConfigurationGroup = new Primatives.Config
 
 // // // //
 
-const plugin: PluginMetadata = new Primatives.Plugin({
-    id: "<%= project.identifiers.kebab %>", // TODO - rename this property to "identifier"
+const plugin: PluginMetadata = new Primitives.Plugin({
+    identifier: "<%= project.identifiers.kebab %>",
     content: {
         label: "<%= project.identifiers.title %>",
         description: "DESCRIPTION GOES HERE",

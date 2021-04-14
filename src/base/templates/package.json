@@ -1,6 +1,6 @@
 {
     "name": "<%= project.identifiers.snake %>",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "scripts": {
         "build": "npm run clean && npm run copyTemplates && npm run compile",
         "dev": "tsc -w -p tsconfig.json",
@@ -13,10 +13,10 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@codotype/core": "0.8.0-canary.9"
+        "@codotype/core": "0.8.0-canary.12"
     },
     "devDependencies": {
-        "@codotype/cli": "0.8.0-canary.20",
+        "@codotype/cli": "0.8.0-canary.22",
         "typescript": "^3.8.3"
     }
 }

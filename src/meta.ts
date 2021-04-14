@@ -2,7 +2,7 @@ import {
     ExperienceRecommendations,
     ConfigurationGroup,
     PropertyTypes,
-    Primatives,
+    Primitives,
 } from "@codotype/core";
 
 // // // //
@@ -47,7 +47,7 @@ import {
 //     defaultValue: "",
 // };
 
-export const EnableDataModelEditor = new Primatives.ConfigurationProperty({
+export const EnableDataModelEditor = new Primitives.ConfigurationProperty({
     identifier: "enableDataModelEditor",
     content: {
         label: "Data Model Editor",
@@ -58,7 +58,7 @@ export const EnableDataModelEditor = new Primatives.ConfigurationProperty({
     type: PropertyTypes.BOOLEAN,
 });
 
-export const GeneratorMetaConfigurationGroup: ConfigurationGroup = new Primatives.ConfigurationGroup(
+export const GeneratorMetaConfigurationGroup: ConfigurationGroup = new Primitives.ConfigurationGroup(
     {
         identifier: "pluginMeta",
         content: {
@@ -74,9 +74,8 @@ export const GeneratorMetaConfigurationGroup: ConfigurationGroup = new Primative
 
 // // // //
 
-const CodotypeGeneratorStarterMeta = new Primatives.Plugin({
-    // identifier: "codotype-plugin-starter",
-    id: "codotype-plugin-starter", // TODO - rename this to identifier
+const CodotypeGeneratorStarterMeta = new Primitives.Plugin({
+    identifier: "codotype-plugin-starter",
     content: {
         label: "Codotype Plugin Starter",
         documentation: "",
