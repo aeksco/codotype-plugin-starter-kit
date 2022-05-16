@@ -1,6 +1,6 @@
 # codotype-plugin-starter-kit
 
-:seedling: Write your own Codotype Plugins with this starter kit
+:seedling: Write your own Codotype Plugins with [this starter kit](https://plugin-starter.codotype.io/)
 
 ## Getting Started
 
