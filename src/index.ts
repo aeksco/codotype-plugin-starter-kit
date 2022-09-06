@@ -5,7 +5,7 @@ const generator: GeneratorProps = {
     name: "Codotype Plugin Starter",
     async write({ runtime }) {
         await runtime.composeWith("./base");
-        await runtime.composeWith("./plugin_meta");
+        // await runtime.composeWith("./plugin_meta");
     },
 };
 
