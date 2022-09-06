@@ -1,15 +1,15 @@
 {
     "name": "codotype-plugin-starter-kit",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "A Codotype Plugin that generates Codotype Plugins",
     "scripts": {
-        "test": "codotype plugin-test",
-        "build": "yarn run clean && yarn run copyTemplates && yarn run compile",
+        "build": "npm run clean && npm run copyTemplates && npm run compile",
         "dev": "tsc -w -p tsconfig.json",
         "clean": "rm -rf ./dist",
-        "compile": "tsc -p ./tsconfig.json",
+        "compile": "tsc -p tsconfig.json",
         "copyTemplates": "mkdir dist && cp -R ./src/* ./dist",
-        "prepublishOnly": "yarn run build",
+        "prepublishOnly": "npm run build",
+        "test": "codotype plugin-test",
         "serve": "codotype plugin-serve"
     },
     "repository": {
@@ -23,10 +23,10 @@
     },
     "homepage": "https://github.com/codotype/codotype-plugin-starter-kit#readme",
     "dependencies": {
-        "@codotype/core": "0.8.0-canary.17"
+        "@codotype/core": "0.8.0-canary.18"
     },
     "devDependencies": {
-        "@codotype/cli": "0.8.0-canary.27",
-        "typescript": "^3.8.3"
+        "@codotype/cli": "0.8.0-canary.28",
+        "typescript": "^4.8.2"
     }
 }
